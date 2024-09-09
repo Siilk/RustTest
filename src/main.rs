@@ -1,27 +1,11 @@
+mod display_;
+
+include!("debug_.rs");
+include!("display_.rs");
+
 fn main()
 {
-    let int: i32 = 6969;
+    // run_debug();
 
-    let real: f64 = 3.1415926;
-
-    println!("{real:.3}");
-
-
-    #[derive(Debug)]
-    struct Wakka(i32);
-
-    let a:Wakka = Wakka(42);
-
-    #[derive(Debug)]
-    struct WakkaWakka(Wakka);
-
-    let b:WakkaWakka = WakkaWakka(Wakka(69));
-
-
-    println!("{a:?}\n");
-    println!("{a:#?}");
-
-    println!("{b:?}\n");
-    println!("{b:#?}");
-
+   run_display();
 }
